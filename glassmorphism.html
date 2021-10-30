@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Glassmorphism</title>
+        <style>
+            :root {
+                --background-color: rgb(21, 255, 0);
+            }
+
+
+            body {
+                margin: 0;
+                padding: 50px;
+                background-color: var(--background-color);
+            }
+            
+            .block {
+                position: relative;
+                margin: 50px auto 0;
+                width: 1280px;
+                height: 720px;
+                background: rgba( 255, 255, 255, 0.25 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 4px );
+                -webkit-backdrop-filter: blur( 4px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block"></div>
+    </body>
+</html>
