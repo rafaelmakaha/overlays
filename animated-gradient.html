@@ -3,12 +3,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moldura Overlay</title>
+    <title>Animated Gradient</title>
     <style>
+        :root {
+            --background-color: rgb(21, 255, 0);
+            --first-gradient-color: #fb0094;
+            --second-gradient-color: #0000ff;
+        }
+
+
         body {
             margin: 0;
             padding: 50px;
-            background-color: rgb(21, 255, 0);
+            background-color: var(--background-color);
         }
          
         .block {
@@ -24,7 +31,7 @@
             position: absolute;
             left: -2px;
             top: -2px;
-            background: linear-gradient(45deg, #fb0094, #0000ff, #fb0094);
+            background: linear-gradient(45deg, var(--first-gradient-color), var(--second-gradient-color), var(--first-gradient-color));
             background-size: 400%;
             width: calc(100% + 4px);
             height: calc(100% + 4px);
